@@ -1,0 +1,2605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DalePlay</class>
+ <widget class="QMainWindow" name="DalePlay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1272</width>
+    <height>653</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DalePlay</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="Playlist">
+     <widget class="QPushButton" name="BtnSiguientePL">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>547</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnNext.png);
+    border: 3px solid;
+border-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnAtrasPL">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>549</x>
+        <y>547</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAtras.png);
+    border: 3px solid;
+border-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInicioPL">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>87</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCancionPL">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>132</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);
+background-image: url(:/Imagenes/btnCanciones.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnAmigoPL">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>177</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);
+background-image: url(:/Imagenes/btnAmigos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnPlaylistPL">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>222</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);
+background-image: url(:/Imagenes/btnPlaylistR.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnArtistaPL">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>267</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnFavoritos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MuestraPlaylist">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>110</y>
+        <width>521</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+font: 12pt &quot;Roboto Bk&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MuestraCancionPL">
+      <property name="geometry">
+       <rect>
+        <x>244</x>
+        <y>552</y>
+        <width>271</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+font: 10pt &quot;Roboto Bk&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MuestraCancionPL_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>644</y>
+        <width>85</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+font: 6pt &quot;Roboto Bk&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FondoPlaylist">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoPlaylist.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>FondoPlaylist</zorder>
+     <zorder>BtnSiguientePL</zorder>
+     <zorder>BtnAtrasPL</zorder>
+     <zorder>BtnInicioPL</zorder>
+     <zorder>BtnCancionPL</zorder>
+     <zorder>BtnAmigoPL</zorder>
+     <zorder>BtnPlaylistPL</zorder>
+     <zorder>BtnArtistaPL</zorder>
+     <zorder>MuestraPlaylist</zorder>
+     <zorder>MuestraCancionPL</zorder>
+     <zorder>MuestraCancionPL_2</zorder>
+    </widget>
+    <widget class="QWidget" name="Artista">
+     <widget class="QPushButton" name="BtnAmigoAr">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>177</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAmigos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCancionAr">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>132</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCanciones.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnArtistaAr">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>267</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnFavoritosF.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInicioAr">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>87</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnPlaylistAr">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>222</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnPlaylist.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FondoArtista">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1301</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoFavoritos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AgregaCancionAr">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>559</y>
+        <width>222</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/AddSong.png);
+color: rgba(255, 255, 255, 0);
+border: 3px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EliminCancionAr">
+      <property name="geometry">
+       <rect>
+        <x>985</x>
+        <y>559</y>
+        <width>223</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/DeleteSong.png);
+color: rgba(255, 255, 255, 0);
+border: 3px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="MostraListaAr">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>115</y>
+        <width>598</width>
+        <height>419</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+     </widget>
+     <zorder>FondoArtista</zorder>
+     <zorder>BtnAmigoAr</zorder>
+     <zorder>BtnCancionAr</zorder>
+     <zorder>BtnArtistaAr</zorder>
+     <zorder>BtnInicioAr</zorder>
+     <zorder>BtnPlaylistAr</zorder>
+     <zorder>AgregaCancionAr</zorder>
+     <zorder>EliminCancionAr</zorder>
+     <zorder>MostraListaAr</zorder>
+    </widget>
+    <widget class="QWidget" name="Login">
+     <widget class="QLabel" name="SingUpFond">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>407</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/SignUp.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnLoginLg">
+      <property name="geometry">
+       <rect>
+        <x>129</x>
+        <y>432</y>
+        <width>150</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnLoginLg.png);
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRegistrarLg">
+      <property name="geometry">
+       <rect>
+        <x>116</x>
+        <y>540</y>
+        <width>175</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnRegistrarLg.png);
+border: 1.8px solid;
+border-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NicknameLg">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>266</y>
+        <width>154</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px groove;
+border-color: rgb(236, 0, 0);
+border-radius: 10px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PasswordLg">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>338</y>
+        <width>154</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px groove;
+border-color: rgb(236, 0, 0);
+border-radius: 10px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Inicio">
+     <widget class="QPushButton" name="BtnAmigoIn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>177</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAmigos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnPlaylistIn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>222</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnPlaylist.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnArtistaIn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>267</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnFavoritos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInicioIn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>87</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicioR.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCancionIn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>132</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCanciones.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FondoInicio">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoInicio.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnLikeIn">
+      <property name="geometry">
+       <rect>
+        <x>267</x>
+        <y>250</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnLikeIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCommIn">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>250</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCommentIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnhareIn">
+      <property name="geometry">
+       <rect>
+        <x>514</x>
+        <y>250</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnShareIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnAgregarPubIn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>654</x>
+        <y>540</y>
+        <width>356</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAgregarPubIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnEntrarPubliIn">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>145</y>
+        <width>201</width>
+        <height>43</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnEntrarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarPuIn">
+      <property name="geometry">
+       <rect>
+        <x>1207</x>
+        <y>241</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnRecienteIn">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>419</y>
+        <width>200</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnRecienteIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnNomAZIn">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>464</y>
+        <width>200</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnNombreAZIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnNomZAIn">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>510</y>
+        <width>200</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnNombreZAIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInteracIn">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>555</y>
+        <width>200</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInteracionIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ListaPubIn">
+      <property name="geometry">
+       <rect>
+        <x>654</x>
+        <y>113</y>
+        <width>355</width>
+        <height>417</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255, 255, 255)</string>
+      </property>
+      <property name="autoScrollMargin">
+       <number>16</number>
+      </property>
+      <property name="horizontalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <property name="batchSize">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ListaComIn">
+      <property name="geometry">
+       <rect>
+        <x>268</x>
+        <y>343</y>
+        <width>356</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LikeIn">
+      <property name="geometry">
+       <rect>
+        <x>595</x>
+        <y>133</y>
+        <width>28</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="UsuarioIn">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>129</y>
+        <width>114</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CorreoIn">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>148</y>
+        <width>114</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnUsuarioIn">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>115</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(24, 24, 23);
+    border: 3px solid;
+    border-radius: 30px;
+background-image: url(:/Imagenes/btnUsuarioIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="PubliIn">
+      <property name="geometry">
+       <rect>
+        <x>268</x>
+        <y>186</y>
+        <width>355</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarNoIn">
+      <property name="geometry">
+       <rect>
+        <x>1207</x>
+        <y>331</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EmpiezaIn">
+      <property name="geometry">
+       <rect>
+        <x>413</x>
+        <y>296</y>
+        <width>149</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TerminaIn">
+      <property name="geometry">
+       <rect>
+        <x>413</x>
+        <y>342</y>
+        <width>149</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BuscarPuIn">
+      <property name="geometry">
+       <rect>
+        <x>1048</x>
+        <y>241</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BuscarNoIn">
+      <property name="geometry">
+       <rect>
+        <x>1046</x>
+        <y>331</y>
+        <width>151</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarEmIn">
+      <property name="geometry">
+       <rect>
+        <x>577</x>
+        <y>293</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarTeIn">
+      <property name="geometry">
+       <rect>
+        <x>577</x>
+        <y>340</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>339</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>1200</x>
+        <y>100</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/Imagenes/btnRegresarCan.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>FondoInicio</zorder>
+     <zorder>BtnAmigoIn</zorder>
+     <zorder>BtnPlaylistIn</zorder>
+     <zorder>BtnArtistaIn</zorder>
+     <zorder>BtnInicioIn</zorder>
+     <zorder>BtnCancionIn</zorder>
+     <zorder>BtnLikeIn</zorder>
+     <zorder>BtnCommIn</zorder>
+     <zorder>BtnhareIn</zorder>
+     <zorder>BtnAgregarPubIn</zorder>
+     <zorder>BtnEntrarPubliIn</zorder>
+     <zorder>BtnBuscarPuIn</zorder>
+     <zorder>BtnRecienteIn</zorder>
+     <zorder>BtnNomAZIn</zorder>
+     <zorder>BtnNomZAIn</zorder>
+     <zorder>BtnInteracIn</zorder>
+     <zorder>ListaPubIn</zorder>
+     <zorder>LikeIn</zorder>
+     <zorder>UsuarioIn</zorder>
+     <zorder>CorreoIn</zorder>
+     <zorder>BtnUsuarioIn</zorder>
+     <zorder>PubliIn</zorder>
+     <zorder>BtnBuscarNoIn</zorder>
+     <zorder>EmpiezaIn</zorder>
+     <zorder>TerminaIn</zorder>
+     <zorder>BuscarPuIn</zorder>
+     <zorder>BuscarNoIn</zorder>
+     <zorder>BtnBuscarEmIn</zorder>
+     <zorder>BtnBuscarTeIn</zorder>
+     <zorder>label_2</zorder>
+     <zorder>ListaComIn</zorder>
+     <zorder>pushButton</zorder>
+    </widget>
+    <widget class="QWidget" name="Usuario">
+     <widget class="QLabel" name="CorreoUs">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>148</y>
+        <width>114</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LikeUs">
+      <property name="geometry">
+       <rect>
+        <x>595</x>
+        <y>133</y>
+        <width>28</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ListaComUs">
+      <property name="geometry">
+       <rect>
+        <x>268</x>
+        <y>343</y>
+        <width>355</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnhareUs">
+      <property name="geometry">
+       <rect>
+        <x>514</x>
+        <y>250</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnShareIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCommUs">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>250</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCommentIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnEntrarPubUs">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>145</y>
+        <width>201</width>
+        <height>43</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnEntrarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="PubliUs">
+      <property name="geometry">
+       <rect>
+        <x>268</x>
+        <y>186</y>
+        <width>355</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarEmUs">
+      <property name="geometry">
+       <rect>
+        <x>1207</x>
+        <y>241</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="UsuarioUs">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>129</y>
+        <width>114</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnLikeUs">
+      <property name="geometry">
+       <rect>
+        <x>267</x>
+        <y>250</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnLikeIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ListaPubUs">
+      <property name="geometry">
+       <rect>
+        <x>657</x>
+        <y>113</y>
+        <width>355</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255, 255, 255)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FondUsuario">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoUsuario.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnVolverUs">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>554</y>
+        <width>200</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnVolverIncioUS.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarTeUs">
+      <property name="geometry">
+       <rect>
+        <x>1207</x>
+        <y>331</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnBuscarEmUs_2">
+      <property name="geometry">
+       <rect>
+        <x>577</x>
+        <y>293</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBuscarIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnMenIntUs">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>513</y>
+        <width>200</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnMenosInteraccionUS.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMasInteUs">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>472</y>
+        <width>200</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInteracionIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRecienteUs">
+      <property name="geometry">
+       <rect>
+        <x>1047</x>
+        <y>431</y>
+        <width>200</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnRecienteIN.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EmpiezaUs">
+      <property name="geometry">
+       <rect>
+        <x>413</x>
+        <y>296</y>
+        <width>150</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EmpiezaPuUs">
+      <property name="geometry">
+       <rect>
+        <x>1048</x>
+        <y>241</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TerminaPuUs">
+      <property name="geometry">
+       <rect>
+        <x>1048</x>
+        <y>331</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans Typewriter</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255,255,255)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnArtistaUs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>267</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnFavoritos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnPlaylistUs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>222</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnPlaylist.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCancionUs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>132</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCanciones.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInicioUs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>87</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnAmigoUs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>177</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAmigos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>335</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>FondUsuario</zorder>
+     <zorder>CorreoUs</zorder>
+     <zorder>LikeUs</zorder>
+     <zorder>BtnhareUs</zorder>
+     <zorder>BtnCommUs</zorder>
+     <zorder>BtnEntrarPubUs</zorder>
+     <zorder>PubliUs</zorder>
+     <zorder>BtnBuscarEmUs</zorder>
+     <zorder>UsuarioUs</zorder>
+     <zorder>BtnLikeUs</zorder>
+     <zorder>ListaPubUs</zorder>
+     <zorder>btnVolverUs</zorder>
+     <zorder>BtnBuscarTeUs</zorder>
+     <zorder>BtnBuscarEmUs_2</zorder>
+     <zorder>BtnMenIntUs</zorder>
+     <zorder>btnMasInteUs</zorder>
+     <zorder>btnRecienteUs</zorder>
+     <zorder>EmpiezaUs</zorder>
+     <zorder>EmpiezaPuUs</zorder>
+     <zorder>TerminaPuUs</zorder>
+     <zorder>BtnArtistaUs</zorder>
+     <zorder>BtnPlaylistUs</zorder>
+     <zorder>BtnCancionUs</zorder>
+     <zorder>BtnInicioUs</zorder>
+     <zorder>BtnAmigoUs</zorder>
+     <zorder>label</zorder>
+     <zorder>ListaComUs</zorder>
+    </widget>
+    <widget class="QWidget" name="Canciones">
+     <widget class="QLabel" name="FondoCancion">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoCanciones.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInicioCa">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>87</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCancionCa">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>132</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCancionesR.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAmigoCa">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>177</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAmigos.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnPlaylistCa">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>222</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnPlaylist.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnArtistCa">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>267</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnFavoritos.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion1">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>101</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnLemonade.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Lemonade</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion2">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>206</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBlinding.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Blinding Lights</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion3">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>311</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnDeath.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Death Bed</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion4">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>416</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnBlueberry.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Blueberry</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion5">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>521</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnRoses.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Roses</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion6">
+      <property name="geometry">
+       <rect>
+        <x>986</x>
+        <y>101</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnRockstar.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>ROCKSTAR</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion7">
+      <property name="geometry">
+       <rect>
+        <x>986</x>
+        <y>206</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnDontstart.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Dont Start Now</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion8">
+      <property name="geometry">
+       <rect>
+        <x>986</x>
+        <y>311</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnUnDia.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Un dia (ONE DAY)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion9">
+      <property name="geometry">
+       <rect>
+        <x>986</x>
+        <y>416</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnHasta.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Hasta Ese Dia</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancion10">
+      <property name="geometry">
+       <rect>
+        <x>986</x>
+        <y>521</y>
+        <width>276</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAgua.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;
+    </string>
+      </property>
+      <property name="text">
+       <string>Agua</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnRegresarCa">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>705</x>
+        <y>20</y>
+        <width>56</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAtras.png);
+    border: 3px solid;
+border-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MostrarCancionCa">
+      <property name="geometry">
+       <rect>
+        <x>313</x>
+        <y>540</y>
+        <width>289</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Bk</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+font: 11pt &quot;Roboto Bk&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnGuardarCa">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>540</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(24, 24, 23);
+    border: 3px solid;
+    border-radius: 20px;
+   	background-image: url(:/Imagenes/AgregarAmigos.png);
+   
+ </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnSiguienteCa">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>20</y>
+        <width>56</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnNext.png);
+    border: 3px solid;
+border-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFavoritosCa">
+      <property name="geometry">
+       <rect>
+        <x>244</x>
+        <y>540</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/AgregaFavoritos.png);
+    border: 3px solid;
+border-color: rgb(24, 24, 23);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Amigos">
+     <widget class="QPushButton" name="BtnCancionAm">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>132</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCanciones.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnAmigoAm">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>177</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAmigosR.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnInicioAm">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>87</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnInicio.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnArtistaAm">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>267</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnFavoritos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnPlaylistAm">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>222</y>
+        <width>187</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnPlaylist.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FondoAmigos">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoAmigos.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnEliminarAm">
+      <property name="geometry">
+       <rect>
+        <x>726</x>
+        <y>539</y>
+        <width>209</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/DeleteFriend.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAgregarAm">
+      <property name="geometry">
+       <rect>
+        <x>1019</x>
+        <y>539</y>
+        <width>209</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/AddFriend.png);
+color: rgba(255, 255, 255, 0);
+    border: 3px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="UsuariosAm">
+      <property name="geometry">
+       <rect>
+        <x>989</x>
+        <y>102</y>
+        <width>268</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="MuestraAmigos">
+      <property name="geometry">
+       <rect>
+        <x>697</x>
+        <y>102</y>
+        <width>268</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EscribeAmigoAm">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>10</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/fondolbl.png);
+color: rgba(255, 255, 255, 0);</string>
+      </property>
+     </widget>
+     <zorder>FondoAmigos</zorder>
+     <zorder>BtnCancionAm</zorder>
+     <zorder>BtnAmigoAm</zorder>
+     <zorder>BtnInicioAm</zorder>
+     <zorder>BtnArtistaAm</zorder>
+     <zorder>BtnPlaylistAm</zorder>
+     <zorder>btnEliminarAm</zorder>
+     <zorder>btnAgregarAm</zorder>
+     <zorder>UsuariosAm</zorder>
+     <zorder>MuestraAmigos</zorder>
+     <zorder>EscribeAmigoAm</zorder>
+    </widget>
+    <widget class="QWidget" name="Register">
+     <widget class="QLabel" name="RegisterFond">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>407</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/Register.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnRegisterRg">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>432</y>
+        <width>150</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnRegisterRg.png);
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLogearRg">
+      <property name="geometry">
+       <rect>
+        <x>116</x>
+        <y>540</y>
+        <width>176</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnLoginRg.png);
+border: 1.8px solid;
+border-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NicknameRg">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>266</y>
+        <width>154</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Arial Rounded MT Bold&quot;;
+border-color: rgb(238, 217, 0);
+border: 2px groove yellow;
+border-radius: 10px;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PasswordRg">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>338</y>
+        <width>154</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Arial Rounded MT Bold&quot;;
+border-color: rgb(238, 217, 0);
+border: 2px groove yellow;
+border-radius: 10px;
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Comentario">
+     <widget class="QLabel" name="FondoComentario">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-35</y>
+        <width>407</width>
+        <height>673</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoComentario.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnCancelarCO">
+      <property name="geometry">
+       <rect>
+        <x>214</x>
+        <y>507</y>
+        <width>122</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCancelar.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnAceptarCO">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>507</y>
+        <width>122</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAceptar.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NombreCO">
+      <property name="geometry">
+       <rect>
+        <x>71</x>
+        <y>231</y>
+        <width>265</width>
+        <height>42</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PublicacionCO">
+      <property name="geometry">
+       <rect>
+        <x>71</x>
+        <y>338</y>
+        <width>265</width>
+        <height>138</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>281</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Publicacion">
+     <widget class="QLabel" name="FondoPublicacion">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-32</y>
+        <width>408</width>
+        <height>708</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/FondoPublicacion.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NombrePU">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>181</y>
+        <width>264</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FechaPU">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>285</y>
+        <width>264</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PublicacionPU">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>390</y>
+        <width>264</width>
+        <height>138</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AceptarPU">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>555</y>
+        <width>122</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnAceptar.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CancelarPU">
+      <property name="geometry">
+       <rect>
+        <x>214</x>
+        <y>555</y>
+        <width>122</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Imagenes/btnCancelar.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>110</y>
+        <width>281</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
